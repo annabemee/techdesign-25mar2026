@@ -1,0 +1,128 @@
+import { Student, Book, ActivityRecord } from './types';
+
+export const STUDENTS: Student[] = [
+  {
+    id: '1',
+    name: 'Julian Thorne',
+    avatar: 'https://images.unsplash.com/photo-1599566150163-29194dcaad36?w=100&h=100&fit=crop',
+    grade: 'Grade 4',
+    section: 'Section A',
+    currentBookId: '101',
+    borrowedDate: '3 days ago',
+    status: 'Reading',
+  },
+  {
+    id: '2',
+    name: 'Elena Vance',
+    avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop',
+    grade: 'Grade 4',
+    section: 'Section A',
+    status: 'Returned',
+  },
+  {
+    id: '3',
+    name: 'Marcus Wu',
+    avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop',
+    grade: 'Grade 4',
+    section: 'Section B',
+    currentBookId: '103',
+    borrowedDate: '1 week ago',
+    status: 'Reading',
+  },
+  {
+    id: '4',
+    name: 'Sienna Brooks',
+    avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop',
+    grade: 'Grade 4',
+    section: 'Section A',
+    currentBookId: '104',
+    borrowedDate: 'yesterday',
+    status: 'Reading',
+  },
+  {
+    id: '5',
+    name: 'Leo Martinez',
+    avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop',
+    grade: 'Grade 4',
+    section: 'Section C',
+    currentBookId: '105',
+    borrowedDate: 'Overdue by 2 days',
+    status: 'Late',
+  },
+];
+
+export const BOOKS: Book[] = [
+  {
+    id: '101',
+    title: 'The Secret History',
+    author: 'Donna Tartt',
+    cover: 'https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=300&h=450&fit=crop',
+    status: 'Borrowed',
+    borrowedBy: 'Julian Thorne',
+  },
+  {
+    id: '102',
+    title: 'Great Expectations',
+    author: 'Charles Dickens',
+    cover: 'https://images.unsplash.com/photo-1543004218-ee141104638a?w=300&h=450&fit=crop',
+    status: 'In Library',
+  },
+  {
+    id: '103',
+    title: 'Design Systems',
+    author: 'Alla Kholmatova',
+    cover: 'https://images.unsplash.com/photo-1589998059171-988d887df646?w=300&h=450&fit=crop',
+    status: 'Borrowed',
+    borrowedBy: 'Marcus Wu',
+  },
+  {
+    id: '104',
+    title: 'The Alchemist',
+    author: 'Paulo Coelho',
+    cover: 'https://images.unsplash.com/photo-1512820790803-83ca734da794?w=300&h=450&fit=crop',
+    status: 'Borrowed',
+    borrowedBy: 'Sienna Brooks',
+  },
+  {
+    id: '105',
+    title: 'Wonder',
+    author: 'R.J. Palacio',
+    cover: 'https://images.unsplash.com/photo-1541963463532-d68292c34b19?w=300&h=450&fit=crop',
+    status: 'Borrowed',
+    borrowedBy: 'Leo Martinez',
+  },
+  {
+    id: '106',
+    title: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    cover: 'https://images.unsplash.com/photo-1535905557558-afc4877a26fc?w=300&h=450&fit=crop',
+    status: 'In Library',
+  },
+];
+
+export const ACTIVITIES: ActivityRecord[] = [
+  {
+    id: 'rec1',
+    studentName: 'Liam Chen',
+    action: 'returned',
+    bookTitle: 'The Great Gatsby',
+    timestamp: '14 MINUTES AGO',
+    type: 'Hardcover Edition',
+  },
+  {
+    id: 'rec2',
+    studentName: 'Sophia Wright',
+    action: 'checked out',
+    bookTitle: 'Circe',
+    timestamp: '2 HOURS AGO',
+    type: 'Normal',
+  },
+  {
+    id: 'rec3',
+    studentName: 'Marcus Reed',
+    action: 'flagged overdue',
+    bookTitle: '1984',
+    timestamp: 'YESTERDAY',
+    type: 'Normal',
+  },
+];
